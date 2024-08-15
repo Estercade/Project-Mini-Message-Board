@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <%- include('navbar', {links: links})  %>
+        <form method="POST" action="/new">
+            <label for="messageUser">Name:</label><br>
+            <input type="text" id="messageUser" name="messageUser" /><br>
+            <label for="messageText">Message:</label><br>
+            <textarea id="messageText" name="messageText"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
